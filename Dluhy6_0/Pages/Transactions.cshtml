@@ -1,0 +1,75 @@
+﻿@page
+@model Dluhy6_0.Pages.TransactionsModel
+@{
+    ViewData["Title"] = "Transactions";
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger" role="alert">@TempData["ErrorMessage"]</div>
+}
+<h1>Transactions</h1>
+
+<p>Welcome, @Model.UserName!</p>
+
+<div>
+    <h2>Create Transaction</h2>
+
+    <form method="post">
+        <div>
+            <label for="giver">Giver:</label>
+            <label for="giver">@Model.UserId</label>
+        </div>
+
+        <div>
+            <label for="receiver">Receiver:</label>
+            <input type="number" name="receiver" id="receiver" />
+        </div>
+
+        <div>
+            <label for="amount">Amount:</label>
+            <input type="number" name="amount" id="amount" />
+        </div>
+
+        <div>
+            <button type="submit">Create</button>
+        </div>
+    </form>
+</div>
+
+<div>
+    <h2>Transactions</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Giver</th>
+                <th>Receiver</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var transaction in Model.GetTransactions())
+            {
+                <tr>
+                    <td>@transaction.GID</td>
+                    <td>@transaction.RID</td>
+                    <td>@transaction.Amount</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h2>Balance</h2>
+    @if (Model.GetBalance() != 0)
+    {
+        <p>Your balance is: @Model.GetBalance()</p>
+    }
+    else
+    {
+        <p>poor bitch</p>
+    }
+    
+</div>
