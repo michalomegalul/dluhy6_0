@@ -14,8 +14,37 @@
         }
     </div>
 }
+<body>
+    <div class="links-wrapper">
+        <ul class="nav-links">
+            <li><a class="sign-in" href="index.html">Sign In</a></li>
+            <li><a class="register" href="register.html">Register</a></li>
+        </ul>
+    </div>
 
-<form method="post">
+    <main class="account-page">
+        <div class="login">
+            <form method="post" method="post">
+                <h1 class="sign-header">sign in</h1>
+
+                <div class="user-pass-container">
+                    <div class="username-container">
+                        <label class="label" for="username">Username</label>
+                        <input type="text"placeholder="Enter your username" type="text" id="username" name="username" required>
+                    </div>
+
+                    <div class="password-container">
+                        <label class="label" for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" type="password" id="password" name="password" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="login-button">sign in</button>
+            </form>
+        </div>
+    </main>
+</body>
+@*<form method="post">
     <div class="form-group">
         <label for="username">Username</label>
         <input type="text" class="form-control" id="username" name="Username" required>
@@ -25,4 +54,4 @@
         <input type="password" class="form-control" id="password" name="Password" required>
     </div>
     <button type="submit" class="btn btn-primary">Login</button>
-</form>
+</form>*@

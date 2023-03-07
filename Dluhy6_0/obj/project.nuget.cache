@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ijLIhESHJFICYD1QWLDO0450zsWcSe2BFO8yzz9NU0+V/y2b+8ZuXjTtgJHMNqP+JHWaXwg92DYqrzJpsgTmSg==",
+  "dgSpecHash": "WV4qy6VHgxgsjPL7ffVBXCMYZK1PpN/9fgEQmuLOzV2q5hePzPcYikXdRjrepPWbiD/tMJu7/x1zvuGabXyECA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dog56\\source\\repos\\Dluhy6_0\\Dluhy6_0\\Dluhy6_0.csproj",
+  "projectFilePath": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\Dluhy6_0.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dog56\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\dog56\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
