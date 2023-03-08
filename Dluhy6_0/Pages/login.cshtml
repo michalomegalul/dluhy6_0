@@ -3,8 +3,9 @@
 @{
     ViewData["Title"] = "login";
 }
-<h1>Login</h1>
-
+<head>
+    <link rel="stylesheet" href="./css/login.css"
+</head>
 @if (!ModelState.IsValid)
 {
     <div class="alert alert-danger">
@@ -17,10 +18,13 @@
 <body>
     <div class="links-wrapper">
         <ul class="nav-links">
-            <li><a class="sign-in" href="index.html">Sign In</a></li>
-            <li><a class="register" href="register.html">Register</a></li>
+            <li><a class="sign-in" asp-page="/login">Sign In</a></li>
+            <li><a class="register" asp-page="/Register">Register</a></li>
         </ul>
     </div>
+    <header class="logo-wrapper">
+        <img class="logo" src="./Images/figma.png" alt="">
+        </header>
 
     <main class="account-page">
         <div class="login">
@@ -44,6 +48,11 @@
         </div>
     </main>
 </body>
+<footer class="footer-wrapper">
+    <div class="footer">
+        <p>Copyright © 2023 Vojtisek a Misa</p>
+    </div>
+</footer>
 @*<form method="post">
     <div class="form-group">
         <label for="username">Username</label>

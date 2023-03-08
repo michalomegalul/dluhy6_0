@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fw09zGCgKQO0BKGnPf4x2UCxILPjxRup6ZCGWmO76EQ=",
+  "Hash": "VGVOMinNoXGaF3qwIsYuP7WBm/rfqJENfrbLmwOAGPE=",
   "Source": "Dluhy6_0",
   "BasePath": "_content/Dluhy6_0",
   "Mode": "Default",
@@ -68,6 +68,23 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
+      "Identity": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\css\\Register.css",
+      "SourceId": "Dluhy6_0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\",
+      "BasePath": "_content/Dluhy6_0",
+      "RelativePath": "css/Register.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Register.css"
+    },
+    {
       "Identity": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\css\\site.css",
       "SourceId": "Dluhy6_0",
       "SourceType": "Discovered",
@@ -100,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\Images\\figma.png",
+      "SourceId": "Dluhy6_0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\",
+      "BasePath": "_content/Dluhy6_0",
+      "RelativePath": "Images/figma.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\figma.png"
     },
     {
       "Identity": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\js\\site.js",

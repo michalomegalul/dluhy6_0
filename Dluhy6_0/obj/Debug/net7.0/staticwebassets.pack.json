@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\Dluhy6_0.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\Images\\figma.png",
+      "PackagePath": "staticwebassets\\Images\\figma.png"
+    },
+    {
+      "Id": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
+    },
+    {
       "Id": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },

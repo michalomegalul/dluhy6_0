@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* fonty */
+main, .links-wrapper, .footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+/* uppercase transform */
+.sign-header, .register-header, .login-button {
+    text-transform: uppercase;
+}
+
+/* body lol */
+body {
+    background-color: rgba(247, 244, 241, 1);
+    height: 100%;
+    min-height: 100vh;
+}
+
+/* div na logo */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(13,17,23,1);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.logo {
+    height: 48px;
+    width: 48px;
+}
+
+/* links  */
+.links-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(56, 56, 63, 1);
+    width: 100vw;
+    height: 70px;
+}
+.nav-links {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links li a {
+    color: #edf0f1;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 23px 20px;
+    margin: 0 15px;
+    padding-bottom: 18px;
+}
+/* sign-in html */
+.sign-in {
+    
+}
+.register {
+    border-color: rgba(56, 56, 63, 1);
+    border-bottom: 5px solid #d0d0d2;
+    transition: border-color 0.25s ease;
+}
+.sign-in:hover {
+
+}
+.register:hover {
+    border-bottom: 5px solid #d0d0d2;
+}
+/* register html */
+.sign-in2 {
+    border-color: rgba(56, 56, 63, 1);
+    transition: border-color 0.25s ease;
+}
+.register2 {
+    border-bottom: 5px solid #d0d0d2;
+}
+.sign-in2:hover {
+    border-bottom: 5px solid #d0d0d2;
+}
+.register2:hover {
+
+}
+
+
+
+/* sirka divu a vsech vecicek */
+form, .username-container, .password-container {
+    width: 100%;
+}
+
+.account-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50vw;
+    height: auto;
+    padding: 0 4vw;
+    border-radius: 15px;
+}
+
+/* sign-in html */
+.sign-header {
+    color: #000;
+    letter-spacing: 0.1rem;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0 30px;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #d0d0d2;
+}
+/* register html */
+.register-header {
+    color: #000;
+    letter-spacing: 0.1rem;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0 30px;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #d0d0d2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 520px;
+
+    z-index: 99;
+}
+.user-pass-container {
+    width: 100%;
+    /* padding-top: 35px; */
+    /* border-top: 1px solid #d0d0d2; */
+
+}
+.username-container, .password-container, .password-conf-container {
+    margin-bottom: 20px;
+}
+
+.label {
+    color: #000;
+    font-size: 18px;
+}
+input {
+    width: 100%;
+    margin-top: 12px;
+    padding: 13px;
+    border: 1px solid rgba(13,17,23,1);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input:focus {
+    outline: 1px solid rgba(13,17,23,1);
+}
+
+.login-button {
+    background-color: rgba(13,17,23,1);
+    color: rgba(247, 244, 241, 1);
+    width: 112px;
+    height: 41px;
+    margin-top: 8px;
+    border-radius: 15px;
+    border: 3px solid rgba(13,17,23,1);
+    cursor: pointer;
+    transition: background-color 0.24s ease;
+}
+.login-button:hover {
+    background-color: rgba(247, 244, 241, 1);
+    color: #000;
+}
+
+
+.footer-wrapper {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 65px;
+
+    text-align: end;
+    line-height: 50px;
+    font-size: 18px;
+    color: #edf0f1;
+    background-color: rgba(56, 56, 63, 1);
+}
+
+@media (max-width: 600px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
