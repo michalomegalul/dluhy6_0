@@ -11,7 +11,7 @@ namespace Dluhy6_0.Pages
         private readonly SettleUpApp _settleUpApp;
         public int UserId { get; }
         public string UserName { get; }
-
+        public decimal Balance { get; set; }
         public TransactionsModel(SettleUpApp settleUpApp, IHttpContextAccessor httpContextAccessor)
         {
             _settleUpApp = settleUpApp;
@@ -44,9 +44,9 @@ namespace Dluhy6_0.Pages
             return _settleUpApp.GetTransactionsForUser(UserId);
         }
 
-        public decimal GetBalance()
+        public double GetBalance()
         {
-            return _settleUpApp.GetBalanceForUser(UserId);
+            return _settleUpApp.GetBalance(UserId);
         }
 
         public void CreateTransaction(int giver, int receiver, decimal amount)

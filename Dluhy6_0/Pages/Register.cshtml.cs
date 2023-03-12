@@ -15,15 +15,18 @@ namespace Dluhy6_0.Pages
         }
 
         [BindProperty]
+        [Required]
         public string Username { get; set; }
 
         [BindProperty]
         [DataType(DataType.Password)]
+        [Required]
         public string Password { get; set; }
 
         [BindProperty]
         [DataType(DataType.Password)]
         [Compare(nameof(Password), ErrorMessage = "The password and confirmation password do not match.")]
+        [Required]
         public string ConfirmPassword { get; set; }
 
         public string ErrorMessage { get; private set; }
@@ -32,22 +35,19 @@ namespace Dluhy6_0.Pages
         {
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPostAsync()
         {
+
             if (!ModelState.IsValid)
             {
+                ModelState.AddModelError("", "Something went wrong");
                 return Page();
             }
-
-            try
+            else
             {
                 _settleUpApp.CreateUser(Username, Password);
-                return RedirectToPage("Index");
-            }
-            catch (Exception ex)
-            {
-                ErrorMessage = ex.Message;
-                return Page();
+                Response.Cookies.Append("UserId", _settleUpApp.GetIdByUsername(Username).ToString());
+                return RedirectToPage("/Transactions");
             }
         }
     }

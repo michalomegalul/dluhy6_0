@@ -2,25 +2,38 @@
 @model Dluhy6_0.Pages.RegisterModel
 @{
     ViewData["Title"] = "Register";
+    dynamic ViewBag = ViewData["ViewBag"];
 }
 
-@if (Model.ErrorMessage != null)
+@if (!ModelState.IsValid)
 {
-    <div class="alert alert-danger">@Model.ErrorMessage</div>
+    <div class="alert alert-danger">
+        @foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+
+    </div>
 }
+@if (ViewData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@ViewData["SuccessMessage"]</div>
+}
+
 <head>
     <link rel="stylesheet" href="./css/Register.css"
 </head>
 <body>
+    <header class="logo-wrapper">
+        <img class="logo" src="./Images/figma.png" alt="">
+    </header>
     <div class="links-wrapper">
         <ul class="nav-links">
             <li><a class="sign-in" asp-page="/login">Sign In</a></li>
             <li><a class="register" asp-page="/Register">Register</a></li>
         </ul>
     </div>
-    <header class="logo-wrapper">
-        <img class="logo" src="./Images/figma.png" alt="">
-    </header>
+
 
 
     <main class="account-page">
@@ -30,19 +43,22 @@
 
                 <div class="user-pass-container">
                     <div class="username-container">
-                        <label class="label" for="username">Username</label>
-                        <input placeholder="Enter your username" type="text" id="username" name="username">
+                        <label class="label" for="Username">Username</label>
+                        <input placeholder="Enter your username" type="text" id="Username" name="Username">
                     </div>
 
                     <div class="password-container">
-                        <label class="label" for="password">Password</label>
-                        <input placeholder="Enter your password" type="text" id="password" name="password">
+                        <label class="label" for="Password">Password</label>
+                        <input placeholder="Enter your password" type="password" id="Password" name="Password" asp-for="Password">
+                        <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
 
                     <div class="password-conf-container">
-                        <label class="label" for="password-conf">Confirm your password</label>
-                        <input placeholder="Enter your password" type="text" id="password-conf" name="password-conf">
+                        <label class="label" for="ConfirmPassword">Confirm your password</label>
+                        <input placeholder="Enter your password" type="password" id="ConfirmPassword" name="ConfirmPassword" asp-for="ConfirmPassword">
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                     </div>
+
 
 
                 </div>

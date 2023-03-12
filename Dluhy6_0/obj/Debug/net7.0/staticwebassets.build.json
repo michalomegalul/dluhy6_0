@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VGVOMinNoXGaF3qwIsYuP7WBm/rfqJENfrbLmwOAGPE=",
+  "Hash": "jjVpZpYFUp6yo+jblPet/a87tkH4A9ZebtEqr+QEwlA=",
   "Source": "Dluhy6_0",
   "BasePath": "_content/Dluhy6_0",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\figma.png"
+    },
+    {
+      "Identity": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\Images\\figma3.png",
+      "SourceId": "Dluhy6_0",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\",
+      "BasePath": "_content/Dluhy6_0",
+      "RelativePath": "Images/figma3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\figma3.png"
     },
     {
       "Identity": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\wwwroot\\js\\site.js",
