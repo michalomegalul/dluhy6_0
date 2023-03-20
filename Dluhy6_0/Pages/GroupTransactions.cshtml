@@ -1,0 +1,115 @@
+﻿@page
+@model Dluhy6_0.Pages.GroupTransactionsModel
+@{
+    ViewData["Title"] = "Group Transactions";
+}
+<head>
+    <link rel="stylesheet" href="./css/login.css"
+</head>
+@if (!ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+<body>
+    <header class="logo-wrapper">
+        <img class="logo" src="./Images/figma.png" alt="">
+    </header>
+    <div class="links-wrapper">
+        <ul class="nav-links">
+            <li><a class="sign-in" asp-page="/Transactions">Tranactions</a></li>
+            <li><a class="register" asp-page="/CreateGroup">Create Group</a></li>
+            <li><a class="register" asp-page="/GroupTransactions">Group Transactions</a></li>
+        </ul>
+    </div>
+    <h1>@ViewData["Title"]</h1>
+    <h2>Add User</h2>
+
+    <form asp-page-handler="AddUser" method="post">
+        <div class="form-group">
+            <label for="groupId">Group ID:</label>
+            <input type="text" class="form-control" id="groupId" name="groupId" required>
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add User</button>
+    </form>
+    <h2>Create Debt</h2>
+    <form asp-page-handler="CreateDebt" method="post">
+        <div class="form-group">
+            <label for="groupId">Group ID:</label>
+            <input type="text" class="form-control" id="groupId" name="groupId" required>
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="text" class="form-control" id="amount" name="amount" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Create Debt</button>
+    </form>
+
+    <h2>Debts</h2>
+    @if (!string.IsNullOrEmpty(TempData["ErrorMessage"] as string))
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+
+    @if (Model.Debts != null && Model.Debts.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Description</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var debt in Model.Debts)
+                {
+                    <tr>
+                        <td>@debt.RID</td>
+                        <td>@debt.Amount.ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No debts found for this user.</p>
+    }
+
+    <h2>Users in your groups</h2>
+
+    @if (Model.GetUsers() != null && Model.GetUsers().Any())
+    {
+        <ul>
+            @foreach (var user in Model.GetUsers())
+            {
+                <li>@user.username</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No users found in your groups.</p>
+    }
+
+    @if (Model.GetGroups() != null && Model.GetGroups().Any())
+    {
+        <ul>
+            @foreach (var group in Model.GetGroups())
+            {
+
+                <li>@group.Name</li>
+                <li>@group.Id</li>
+            }
+        </ul>
+    }
+
+</body>

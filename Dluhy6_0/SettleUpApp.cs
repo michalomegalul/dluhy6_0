@@ -18,6 +18,7 @@ namespace dluhy6_0
         {
             _connectionString = db_Configuration.ConnectionString;
         }
+         
 
         public void CreateTransaction(int giverId, int receiverId, decimal amount)
         {
@@ -54,7 +55,7 @@ namespace dluhy6_0
                     {
                         ID = reader.GetInt32(0),
                         GID = reader.GetInt32(1),
-                        RID = reader.GetInt32(2),
+                        RID = reader.IsDBNull(2) ? null : reader.GetInt32(2),
                         Amount = reader.GetDecimal(3),
                         Date = reader.GetDateTime(4)
                     };
@@ -279,7 +280,7 @@ namespace dluhy6_0
                 }
                 catch (Exception ex)
                 {
-                    // Handle exception
+                    // ni
                 }
             }
         }
@@ -343,7 +344,6 @@ namespace dluhy6_0
                     // Handle exception
                 }
             }
-
             return users;
         }
         public bool UserExists(int userId, string username)
@@ -376,14 +376,5 @@ namespace dluhy6_0
                 return false;
             }
         }
-
-
-
-
-
-
-
-
-
     }
 }

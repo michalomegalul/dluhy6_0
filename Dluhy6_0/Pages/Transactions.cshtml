@@ -7,6 +7,19 @@
 {
     <div class="alert alert-danger" role="alert">@TempData["ErrorMessage"]</div>
 }
+<head>
+    <link rel="stylesheet" href="./css/login.css"
+</head>
+<header class="logo-wrapper">
+    <img class="logo" src="./Images/figma.png" alt="">
+</header>
+<div class="links-wrapper">
+    <ul class="nav-links">
+        <li><a class="sign-in" asp-page="/Transactions">Tranactions</a></li>
+        <li><a class="register" asp-page="/CreateGroup">Create Group</a></li>
+        <li><a class="register" asp-page="/GroupTransactions">Group Transactions</a></li>
+    </ul>
+</div>
 <h1>Transactions</h1>
 
 <p>Welcome, @Model.UserName!</p>

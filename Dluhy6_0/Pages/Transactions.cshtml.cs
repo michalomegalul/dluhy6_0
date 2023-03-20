@@ -53,12 +53,12 @@ namespace Dluhy6_0.Pages
         {
             if (giver == null || receiver == null)
             {
-                Console.WriteLine("cum");
                 return;
             }
 
             _settleUpApp.CreateTransaction(giver, receiver, amount);
         }
+
 
         public void OnPost()
         {

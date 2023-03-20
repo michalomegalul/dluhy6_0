@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\dog56\source\repos\dluhy6_0\Dluhy6_0
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/dog56/source/repos/dluhy6_0/Dluhy6_0/Pages/CreateGroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlR3JvdXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/dog56/source/repos/dluhy6_0/Dluhy6_0/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dog56/source/repos/dluhy6_0/Dluhy6_0/Pages/GroupTransactions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JvdXBUcmFuc2FjdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dog56/source/repos/dluhy6_0/Dluhy6_0/Pages/login.cshtml]

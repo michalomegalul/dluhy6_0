@@ -1,4 +1,5 @@
 using dluhy6_0;
+using Dluhy6_0;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<SettleUpApp>();
+builder.Services.AddScoped<SettleUpAppGroups>();
 builder.Services.AddHttpContextAccessor();
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
