@@ -32,7 +32,6 @@ public class SettleUpAppGroups
 
         }
     }
-
     public void AddUserToGroup(int userId, int groupId)
     {
         using (var connection = new SqlConnection(_connectionString))
@@ -96,8 +95,6 @@ public class SettleUpAppGroups
         }
         return -1;
     }
-
-
     public bool UserInGroup(int userId, int groupId)
     {
         using (var connection = new SqlConnection(_connectionString))
@@ -311,4 +308,8 @@ public class SettleUpAppGroups
 
         return debts;
     }
+
+
+
+
 }

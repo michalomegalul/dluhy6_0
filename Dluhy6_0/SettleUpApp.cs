@@ -48,7 +48,6 @@ namespace dluhy6_0
                 command.Parameters.AddWithValue("@userId", userId);
 
                 using var reader = command.ExecuteReader();
-
                 while (reader.Read())
                 {
                     var transaction = new Transactions()
