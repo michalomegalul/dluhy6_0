@@ -5,6 +5,13 @@
 <head>
     <link rel="stylesheet" href="./css/login.css"
 </head>
+<div class="links-wrapper">
+    <ul class="nav-links">
+        <li><a class="sign-in" asp-page="/Transactions">Tranactions</a></li>
+        <li><a class="register" asp-page="/CreateGroup">Create Group</a></li>
+        <li><a class="register" asp-page="/GroupTransactions">Group Transactions</a></li>
+    </ul>
+</div>
 <h1>Create Group</h1>
 
 @if (Model.ErrorMessage != null)
