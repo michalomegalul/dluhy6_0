@@ -14,6 +14,9 @@
     <title>Dlužníček</title>
 
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        
+    </style>
 </head>
 
 <body>
@@ -24,7 +27,9 @@
 
         <div class="links-wrapper">
             <ul class="nav-links">
-                <li><a class="transactions-link" asp-page="/Transactions">Transactions</a></li>
+                <li><a class="sign-in" asp-page="/Transactions">Tranactions</a></li>
+                <li><a class="register" asp-page="/CreateGroup">Create Group</a></li>
+                <li><a class="register" asp-page="/GroupTransactions">Group Transactions</a></li>
             </ul>
         </div>
 
@@ -63,7 +68,9 @@
                         <h4>Giver</h4>
                         @foreach (var transaction in Model.GetTransactions())
                         {
-                            <td>@transaction.GID</td>
+
+                            <td style="flex-direction: column;">@transaction.GID</td>
+
                         }
                     </div>
 
@@ -71,7 +78,10 @@
                         <h4>Receiver</h4>
                         @foreach (var transaction in Model.GetTransactions())
                         {
-                            <td>@transaction.RID</td>
+
+
+                            <td >@transaction.RID</td>
+
                         }
                     </div>
 
@@ -79,7 +89,9 @@
                         <h4>Amount</h4>
                         @foreach (var transaction in Model.GetTransactions())
                         {
-                            <td>@transaction.Amount</td>
+
+                            <td >@transaction.Amount</td>
+
                         }
                     </div>
                 </div>

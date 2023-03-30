@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\Dluhy6_0.csproj": {}
+    "C:\\Users\\dog56\\source\\repos\\Dluhy6_0\\Dluhy6_0\\Dluhy6_0.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\Dluhy6_0.csproj": {
+    "C:\\Users\\dog56\\source\\repos\\Dluhy6_0\\Dluhy6_0\\Dluhy6_0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\Dluhy6_0.csproj",
+        "projectUniqueName": "C:\\Users\\dog56\\source\\repos\\Dluhy6_0\\Dluhy6_0\\Dluhy6_0.csproj",
         "projectName": "Dluhy6_0",
-        "projectPath": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\Dluhy6_0.csproj",
+        "projectPath": "C:\\Users\\dog56\\source\\repos\\Dluhy6_0\\Dluhy6_0\\Dluhy6_0.csproj",
         "packagesPath": "C:\\Users\\dog56\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dog56\\source\\repos\\dluhy6_0\\Dluhy6_0\\obj\\",
+        "outputPath": "C:\\Users\\dog56\\source\\repos\\Dluhy6_0\\Dluhy6_0\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
